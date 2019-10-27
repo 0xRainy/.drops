@@ -61,6 +61,7 @@ SPACESHIP_TIME_SHOW="false"
 # ALIAS
 alias uwal='~/tools/uwal'
 alias sgrab='~/tools/sgrab'
+alias sgrabgif='~tools/sgrabgif'
 alias zzzfoo='~/tools/zzzfoo'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.drops --work-tree=$HOME'
 
