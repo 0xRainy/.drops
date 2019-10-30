@@ -6,4 +6,4 @@ TMP_PALETTE=$(mktemp /tmp/paletteXXXXXXXXXX.png)
 timestamp=$( date +%Y-%m-%d_%H-%M-%S )
 ffmpeg -f x11grab -s "$W"x"$H" -y -i :0.0+$X,$Y -vcodec huffyuv -an -r 60 $TMP_AVI
 ffmpeg -y -i $TMP_AVI -vf framerate=60,palettegen $TMP_PALETTE
-ffmpeg -y -i $TMP_AVI -i $TMP_PALETTE -framerate 60 -filter_complex "paletteuse" ~$timestamp.gif
+ffmpeg -y -i $TMP_AVI -i $TMP_PALETTE -framerate 60 -filter_complex "paletteuse" ~/$timestamp.gif
