@@ -1,7 +1,7 @@
 # .drops
 My dotfiles
 
-### Prerequisites
+## Prerequisites
 Following Prerequisites must be installed:
 
 | Prerequisite                                                          | Description                                                                    |
@@ -20,7 +20,7 @@ Following Prerequisites must be installed:
 | [dunst](https://dunst-project.org/)                                   | Customizable and lightweight notification-daemon                               |
 | [rofi](https://github.com/davatorium/rofi)                            | A window switcher, application launcher and dmenu replacement                  |
 
-## License
+### License
 
 The Unlicense
 
