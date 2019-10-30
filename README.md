@@ -19,3 +19,9 @@ Following Prerequisites must be installed:
 | [slop](https://github.com/naelstrof/slop)                             | Queries for a selection from the user and prints the region to stdout          |
 | [dunst](https://dunst-project.org/)                                   | Customizable and lightweight notification-daemon                               |
 | [rofi](https://github.com/davatorium/rofi)                            | A window switcher, application launcher and dmenu replacement                  |
+
+## License
+
+The Unlicense
+
+See the [license](./LICENSE) document for the full text.
