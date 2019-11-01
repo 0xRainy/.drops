@@ -58,8 +58,8 @@ let g:airline_skip_empty_sections = 1
 
 " Functions 'n Stuff
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-  set grepprg=ag\ --nogroup
+  let g:ackprg = 'ag --vimgrep --nocolor'
+  set grepprg=ag\ --nogroup\ --nocolor
 endif
 
 "function! s:show_documentation()
@@ -83,7 +83,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'} " code completion / 
 "    \ 'do': 'make',
 "    \ }
 " (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf'
 Plug 'vim-airline/vim-airline'	" status/tabline
 " Plug '/usr/lib/python3.7/site-packages/powerline/bindings/vim'		" statusbar
 Plug 'dylanaraps/wal.vim'	" wal theme
@@ -103,6 +103,7 @@ Plug 'ryanoasis/vim-devicons'	" NERDTree icons
 " Plug 'terryma/vim-multiple-cursors'		" edit multiple selections at same time
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/echodoc.vim'
+Plug 'wincent/command-t'
 " Plug 'roxma/nvim-yarp'
 " Plug 'roxma/vim-hug-neovim-rpc'
 "Plug 'Shougo/deoplete.nvim'
@@ -135,17 +136,8 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 nmap <C-F>f <Plug>CtrlSFPrompt
+nmap ge :CocCommand explorer<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
-imap <expr><TAB>
- \ pumvisible() ? "\<C-n>" :
- \ neosnippet#expandable_or_jumpable() ?
- \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
- \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-imap <expr><silent><CR> pumvisible() ? deoplete#mappings#close_popup() .
-      \ "\<Plug>(neosnippet_jump_or_expand)" : "\<CR>"
-smap <silent><CR> <Plug>(neosnippet_jump_or_expand)
-
 " Autocmds
+
