@@ -14,7 +14,7 @@
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font = Roboto Mono for Powerline 9
+    font = RobotoMono Nerd Font Mono 9
     line_height = 0
     markup = full
     format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
@@ -49,12 +49,12 @@
 [urgency_low]
     background = "#232323"
     foreground = "#a8a8a8"
-    timeout = 10
+    timeout = 5
 
 [urgency_normal]
     background = "#232323"
     foreground = "#a8a8a8"
-    timeout = 10
+    timeout = 5
 
 [urgency_critical]
     background = "#d64e4e"
