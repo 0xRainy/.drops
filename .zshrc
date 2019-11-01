@@ -59,12 +59,14 @@ fi
 
 SPACESHIP_TIME_SHOW="false"
 # ALIAS
+alias vim='nvim'
 alias uwal='~/tools/uwal'
 alias sgrab='~/tools/sgrab'
 alias sgrabgif='~/tools/sgrabgif'
 alias shot='~/tools/shot'
 alias zzzfoo='~/tools/zzzfoo'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.drops --work-tree=$HOME'
+alias chatty='screen -dm java -jar chatty/Chatty.jar'
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
