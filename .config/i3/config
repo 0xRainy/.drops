@@ -212,8 +212,8 @@ mode "gaps" {
 
 bindsym $mod+g mode "gaps"
 
-gaps inner 4
-gaps outer 7
+gaps inner 20
+gaps outer 0
 
 # COLORS
 set_from_resource $fg i3wm.color7 #f0f0f0
