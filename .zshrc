@@ -67,6 +67,7 @@ alias shot='~/tools/shot'
 alias zzzfoo='~/tools/zzzfoo'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.drops --work-tree=$HOME'
 alias chatty='screen -dm java -jar chatty/Chatty.jar'
+alias volctl='ncpamixer'
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
