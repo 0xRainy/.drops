@@ -230,8 +230,8 @@ client.background	$bg
 # Custom Binds
 
 bindsym Print exec --no-startup-id ~/tools/shot
-bindsym Mod5+Print exec --no-startup-id ~/tools/sgrabgif
-bindsym Mod5+Shift+Print exec --no-startup-id ~/tools/sgrab
+bindsym Control+Print exec --no-startup-id ~/tools/sgrabgif
+bindsym Control+Shift+Print exec --no-startup-id ~/tools/sgrab
 
 # Default Behavior for Specific windows
 for_window [class="mpv"] floating enable
