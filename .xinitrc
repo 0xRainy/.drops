@@ -5,7 +5,8 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-/usr/bin/xcalib -o DVI-D-0 /home/rainy/.icc-profiles/benq_xl2420t.icc
+xcalib -o DVI-D-0 /home/rainy/.icc-profiles/benq_xl2420t.icc
+
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
