@@ -2,4 +2,5 @@
 slop=$(slop -f "%x %y %w %h %g %i") || exit 1
 read -r X Y W H G ID < <(echo $slop)
 timestamp=$( date +%Y-%m-%d_%H-%M-%S )
-ffmpeg -f x11grab -loglevel 0 -s "$W"x"$H" -i :0.0+$X,$Y -vframes 1 ~/$timestamp.png
+ffmpeg -f x11grab -loglevel 0 -s "$W"x"$H" -i :0.0+$X,$Y -vframes 1 ~/Pictures/$timestamp.png
+xclip -selection clipboard -t image/png -i ~/Pictures/$timestamp.png
