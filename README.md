@@ -13,6 +13,8 @@ Following Prerequisites must be installed:
 | [dejavu](https://dejavu-fonts.github.io/)                             | Font family based on the Bitstream Vera Fonts with a wider range of characters |
 | [xorg-fonts-encodings](https://www.archlinux.org/packages/extra/any/xorg-fonts-encodings/)| X.org font encoding files                                  |
 | [roboto mono nerd font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete%20Mono.ttf) | Mono Nerd Font for X11 and the console. Manual font instal required |
+| [noto-fonts](https://www.archlinux.org/packages/extra/any/noto-fonts/)| Google Noto TTF fonts|
+| [noto-fonts-emoji](https://www.archlinux.org/packages/extra/any/noto-fonts-emoji/)| Google Noto emoji fonts|
 | [zsh](http://www.zsh.org/)                                            | A very advanced and programmable command interpreter (shell) for UNIX          |
 | [zplug](https://github.com/zplug/zplug)                               | Zsh Plugin Manager                                                             |
 | [feh](https://feh.finalrewind.org/)                                   | Fast and light imlib2-based image viewer                                       |
