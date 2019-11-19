@@ -69,6 +69,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.drops --work-tree=$HOME'
 alias chatty='screen -dm java -jar chatty/Chatty.jar'
 alias volctl='ncpamixer'
 alias cpufreq='watch -n.1 grep \"cpu MHz\" /proc/cpuinfo'
+alias weather='tools/weather'
+alias weatherv2='curl v2.wttr.in/?0F'
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
