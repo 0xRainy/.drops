@@ -1,45 +1,42 @@
 #!/bin/bash
+wallpaper='/home/rainy/Pictures/splash_walls/wallpaper.jpeg'
+unsplash='http://source.unsplash.com/'
+
+help_text() {
+  echo "Options are:"
+  echo "	Search: search search_term"
+  echo "	Strict Search: strict search_term"
+  echo "	Random image: random"
+  echo "	Featured:"
+  echo "		 daily"
+  echo "		 weekly"
+  echo "	Random from Collection: col collection_number"
+  echo "	Random from User: user user_name"
+  echo "	Random from User Likes: likes user_name"
+}
 if [[ $1 == "help" ]]; then
-	echo "Options are:"
-	echo "	Search: search search_term"
-	echo "	Strict Search: strict search_term"
-	echo "	Random image: random"
-	echo "	Featured:"
-	echo "		 daily"
-	echo "		 weekly"
-	echo "	Random from Collection: col collection_number"
-	echo "	Random from User: user user_name"
-	echo "	Random from User Likes: likes user_name"
-	exit
+  help_text
+  exit
 elif [[ $1 == "random" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/random/1920x1080
+  curl -L --progress-bar -o $wallpaper "$unsplash"random/1920x1080
 elif [[ $1 == "daily" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/1920x1080/daily
+  curl -L --progress-bar -o $wallpaper "$unsplash"1920x1080/daily
 elif [[ $1 == "weekly" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/1920x1080/weekly
+  curl -L --progress-bar -o $wallpaper "$unsplash"1920x1080/weekly
 elif [[ $1 == "col" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/collection/$2/1920x1080
+  curl -L --progress-bar -o $wallpaper "$unsplash"collection/$2/1920x1080
 elif [[ $1 == "user" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/user/$2/1920x1080
+  curl -L --progress-bar -o $wallpaper "$unsplash"user/$2/1920x1080
 elif [[ $1 == "likes" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/user/$2/likes/1920x1080
+  curl -L --progress-bar -o $wallpaper "$unsplash"user/$2/likes/1920x1080
 elif [[ $1 == "strict" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/featured/1920x1080/\?$2
+  curl -L --progress-bar -o $wallpaper "$unsplash"featured/1920x1080/\?$2
 elif [[ $1 == "search" ]]; then
-	curl -L --progress-bar -o ~/Pictures/splash_walls/wallpaper.jpeg http://source.unsplash.com/1920x1080/\?$1
+  curl -L --progress-bar -o $wallpaper "$unsplash"1920x1080/\?$1
 else
-	echo "Options are:"
-	echo "	Search: search search_term"
-	echo "	Strict Search: strict search_term"
-	echo "	Random image: random"
-	echo "	Featured:"
-	echo "		 daily"
-	echo "		 weekly"
-	echo "	Random from Collection: col collection_number"
-	echo "	Random from User: user user_name"
-	echo "	Random from User Likes: likes user_name"
-	exit
-fi
+  help_text
+  exit
+  fi
 
 wal -c
-wal -i ~/Pictures/splash_walls/wallpaper.jpeg
+wal -i $wallpaper
