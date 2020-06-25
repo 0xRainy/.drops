@@ -12,11 +12,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 " Better /
 Plug 'wincent/loupe'
+" Completion
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/deoplete-lsp'
+"Plug 'roxma/nvim-yarp'
+"Plug 'roxma/vim-hug-neovim-rpc'
 " File explorer
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
 " Better Comments
-Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-commentary'
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
 " Auto set indent settings
@@ -29,9 +34,9 @@ Plug 'junegunn/rainbow_parentheses.vim'
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'
 " Auto pairs for '(' '[' '{'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 " Vim builtin LSP
-Plug 'neovim/nvim-lsp'
+" Plug 'neovim/nvim-lsp'
 " Status Line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -47,7 +52,8 @@ Plug 'liuchengxu/vista.vim'
 " Multi-Cursor
 Plug 'terryma/vim-multiple-cursors'
 " Themes
-Plug 'arzg/vim-substrata'
+" Plug 'arzg/vim-substrata'
+Plug 'rakr/vim-one'
 
 call plug#end()
 

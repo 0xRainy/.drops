@@ -14,7 +14,7 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 " Integrated terminal
-nnoremap <c-l> :call OpenTerminal()<CR> " open terminal
+nnoremap <c-l> :call OpenTerminal()<CR>
 tnoremap <Esc> <C-\><C-n> " normal mode with esc
 
 " Tab switch buffers in General Mode

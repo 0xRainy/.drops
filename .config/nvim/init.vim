@@ -14,6 +14,8 @@ source $HOME/.config/nvim/general/mappings.vim
 " .vim Things
 source $HOME/.config/nvim/plug-configs/start-screen.vim
 source $HOME/.config/nvim/plug-configs/clap.vim
+source $HOME/.config/nvim/plug-configs/airline.vim
+source $HOME/.config/nvim/plug-configs/nvim-lsp.vim
 
 " .lua Things
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua

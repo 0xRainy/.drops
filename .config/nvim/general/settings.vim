@@ -1,5 +1,6 @@
 syntax on
 
+set guicursor=a:blinkwait1-blinkoff500-blinkon500                          " Always block cursor
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -27,6 +28,7 @@ set signcolumn=yes                      " Always show the signcolumn, otherwise 
 set updatetime=300                      " Faster completion
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set noerrorbells						" No ding ding ding
+set inccommand=split                    " Magic - Shows the effect of a command while typing
 set tabstop=4 softtabstop=4				" Tab settings
 set shiftwidth=4
 set expandtab
@@ -47,11 +49,13 @@ set listchars+=extends:»
 set listchars+=trail:•
 set textwidth=80                        " automatically wrap at 80 columns
 set whichwrap=b,h,l,s,<,>,[,],~         " allow crossing of line boundaries
-set guifont=mononoki\ NF
+set guifont=FiraCode\ NF:h15
+set wildmenu
+set wildmode=longest:full,full
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 
 " Theme
-colorscheme substrata
+colorscheme one
 
 " Neovide Comfig
 let g:neovide_refresh_rate=120
