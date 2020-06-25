@@ -12,11 +12,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 " Better /
 Plug 'wincent/loupe'
+" Vim builtin LSP
+Plug 'neovim/nvim-lsp'
 " Completion
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'Shougo/deoplete-lsp'
-"Plug 'roxma/nvim-yarp'
-"Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete-lsp'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 " File explorer
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
@@ -33,10 +35,6 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/rainbow_parentheses.vim'
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'
-" Auto pairs for '(' '[' '{'
-" Plug 'jiangmiao/auto-pairs'
-" Vim builtin LSP
-" Plug 'neovim/nvim-lsp'
 " Status Line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -48,7 +46,7 @@ Plug 'junegunn/gv.vim'
 " Start Screen
 Plug 'mhinz/vim-startify'
 " Vista
-Plug 'liuchengxu/vista.vim'
+" Plug 'liuchengxu/vista.vim'
 " Multi-Cursor
 Plug 'terryma/vim-multiple-cursors'
 " Themes

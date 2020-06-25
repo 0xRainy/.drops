@@ -36,7 +36,7 @@ set smartindent
 set nowrap
 set smartcase
 set noswapfile
-set undodir=C:\\nvimtemp\\undo\\
+set undodir=$HOME/.config/nvim/undo
 set undofile
 set incsearch							" Search while typing
 set colorcolumn=80						" This thing ------------------------>
