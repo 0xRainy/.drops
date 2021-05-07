@@ -1,5 +1,11 @@
-syntax on
+syntax enable
+filetype plugin indent on
 
+let mapleader=" "
+let maplocalleader="\\"
+
+set completeopt=menuone,noselect
+set shortmess+=c
 set guicursor=a:blinkwait1-blinkoff500-blinkon500                          " Always block cursor
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -15,6 +21,7 @@ set splitright                          " Vertical splits will automatically be 
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set autoindent                          " Good auto indent
+set autochdir
 set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set relativenumber                      " Relative line numbers
@@ -27,21 +34,21 @@ set nowritebackup                       " This is recommended by coc
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
 set updatetime=300                      " Faster completion
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
-set noerrorbells						" No ding ding ding
+set noerrorbells                        " No ding ding ding
 set inccommand=split                    " Magic - Shows the effect of a command while typing
-set tabstop=4 softtabstop=4				" Tab settings
+set tabstop=4 softtabstop=4             " Tab settings
 set shiftwidth=4
 set expandtab
 set smartindent
 set nowrap
 set smartcase
+set ignorecase
 set noswapfile
 set undodir=$HOME/.config/nvim/undo
 set undofile
-set incsearch							" Search while typing
-set colorcolumn=80						" This thing ------------------------>
+set incsearch                           " Search while typing
+set colorcolumn=80                      " This thing ------------------------>
 set termguicolors
-set noemoji
 set list                                " show whitespace
 set listchars=nbsp:⦸
 set listchars+=tab:▷┅
@@ -49,14 +56,11 @@ set listchars+=extends:»
 set listchars+=trail:•
 set textwidth=80                        " automatically wrap at 80 columns
 set whichwrap=b,h,l,s,<,>,[,],~         " allow crossing of line boundaries
-set guifont=FiraCode\ NF:h15
+set guifont=FiraCode\ NF:h12
 set wildmenu
 set wildmode=longest:full,full
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 
-" Theme
-colorscheme one
-
-" Neovide Comfig
+" Neovide settings
 let g:neovide_refresh_rate=120
-let g:neovide_transparency=0.97
+

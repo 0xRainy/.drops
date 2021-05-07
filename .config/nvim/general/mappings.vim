@@ -1,8 +1,3 @@
-" Leader Key
-let mapleader=" "
-let maplocalleader="\\"
-nnoremap <SPACE> <Nop>
-
 " Use alt+hjkl to move between splits
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
@@ -14,7 +9,7 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 " Integrated terminal
-nnoremap <c-l> :call OpenTerminal()<CR>
+nnoremap <C-l> :20sp\| terminal<CR>
 tnoremap <Esc> <C-\><C-n> " normal mode with esc
 
 " Tab switch buffers in General Mode
@@ -30,9 +25,13 @@ nnoremap <Leader><Leader> :bprevious<CR>
 
 " Leader+q :q
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
 
 " Leader+d :bd
-nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>d :b #\| bd #<CR>
+nnoremap <Leader>D :b #\| bd! #<CR>
 
-" Open Startify
-nnoremap <Leader>, :Startify<CR>
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+

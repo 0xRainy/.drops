@@ -6,52 +6,51 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin('~/.vim/plugged')
 
-" Searching
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
-" Better /
-Plug 'wincent/loupe'
-" Vim builtin LSP
-Plug 'neovim/nvim-lsp'
-" Completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-lsp'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-" File explorer
-Plug 'justinmk/vim-dirvish'
-Plug 'kristijanhusak/vim-dirvish-git'
-" Better Comments
-Plug 'tpope/vim-commentary'
-" Have the file system follow you around
-Plug 'airblade/vim-rooter'
-" Auto set indent settings
-Plug 'tpope/vim-sleuth'
-" Text Navigation
-Plug 'justinmk/vim-sneak'
-" Add some color
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'junegunn/rainbow_parentheses.vim'
-" Cool Icons
-Plug 'ryanoasis/vim-devicons'
-" Status Line
+" Rust.vim
+Plug 'rust-lang/rust.vim'
+
+" Collection of common configuration for the Nvim LSP client
+Plug 'neovim/nvim-lspconfig'
+
+" Extensions to built-in LSP, for example, providing type inlay hints
+Plug 'nvim-lua/lsp_extensions.nvim'
+
+" Autocompletion framework for built-in LSP
+Plug 'hrsh7th/nvim-compe'
+
+" Snippet engine to handle LSP snippets
+Plug 'hrsh7th/vim-vsnip'
+
+" Telescope, everything is fuzzy
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+" Telescope cheatsheets
+Plug 'tami5/sql.nvim'
+Plug 'nvim-telescope/telescope-cheat.nvim'
+" Telescope lsp handlers
+Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
+
+" Themes
+Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'kyazdani42/nvim-web-devicons'
+
+" Appearance
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Git
-Plug 'airblade/vim-gitgutter'
+Plug 'mkitt/tabline.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+
+" Languages
+Plug 'cespare/vim-toml'
+
+" Functionality
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
-" Start Screen
-Plug 'mhinz/vim-startify'
-" Vista
-" Plug 'liuchengxu/vista.vim'
-" Multi-Cursor
-Plug 'terryma/vim-multiple-cursors'
-" Themes
-" Plug 'arzg/vim-substrata'
-Plug 'rakr/vim-one'
+Plug 'simeji/winresizer'
 
 call plug#end()
 
