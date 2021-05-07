@@ -3,24 +3,25 @@
 "   / // __ \/ / __/ | / / / __ `__ \
 " _/ // / / / / /__| |/ / / / / / / /
 "/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
-" set runtimepath+=$HOME/.drops/.config/nvim
+" set runtimepath+=
+if has('win32') | source $LOCALAPPDATA/nvim/helper.vim | else | source $HOME/.config/nvim/helper.vim | endif
 
-" Always source these
-source $HOME/.drops/.config/nvim/vim-plug/plugins.vim
-source $HOME/.drops/.config/nvim/general/settings.vim
-source $HOME/.drops/.config/nvim/general/functions.vim
-source $HOME/.drops/.config/nvim/general/mappings.vim
+" Always src these
+execute config_cmd."/vim-plug/plugins.vim"
+execute config_cmd."/general/functions.vim"
+execute config_cmd."/general/settings.vim"
+execute config_cmd."/general/mappings.vim"
 
 " .vim Things
-source $HOME/.drops/.config/nvim/plug-configs/airline.vim
-source $HOME/.drops/.config/nvim/plug-configs/nvim-lsp.vim
-source $HOME/.drops/.config/nvim/plug-configs/compe.vim
-source $HOME/.drops/.config/nvim/plug-configs/nvim-tree.vim
-source $HOME/.drops/.config/nvim/plug-configs/telescope.vim
+execute config_cmd."/plug-configs/airline.vim"
+execute config_cmd."/plug-configs/nvim-lsp.vim"
+execute config_cmd."/plug-configs/compe.vim"
+execute config_cmd."/plug-configs/nvim-tree.vim"
+execute config_cmd."/plug-configs/telescope.vim"
 
 " .lua Things
-luafile $HOME/.drops/.config/nvim/lua_stuff/lsp.lua
-luafile $HOME/.drops/.config/nvim/lua_stuff/telescope.lua
+execute config_cmd_lua."/lua_stuff/lsp.lua"
+execute config_cmd_lua."/lua_stuff/telescope.lua"
 
 " Theme
 colorscheme embark
