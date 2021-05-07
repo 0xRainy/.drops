@@ -1,5 +1,3 @@
-require'telescope'.load_extension("cheat")
-require'telescope'.load_extension('lsp_handlers')
 require('telescope').setup{
   defaults = {
     vimgrep_arguments = {
@@ -46,4 +44,6 @@ require('telescope').setup{
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
   }
 }
+require'telescope'.load_extension("cheat")
+require'telescope'.load_extension('lsp_handlers')
 
