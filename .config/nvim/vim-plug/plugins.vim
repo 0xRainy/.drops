@@ -1,6 +1,6 @@
 " Auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+if empty(glob('$LOCALAPPDATA/nvim/autoload/plug.vim'))
+  silent !curl -fLo $LOCALAPPDATA/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
@@ -38,10 +38,26 @@ Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'kyazdani42/nvim-web-devicons'
 
 " Appearance
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'mkitt/tabline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'wadackel/vim-dogrun'
+Plug 'haishanh/night-owl.vim'
+Plug '/tyrannicaltoucan/vim-deep-space'
+Plug 'wojciechkepka/vim-github-dark'
+Plug 'cocopon/iceberg.vim'
+Plug 'fenetikm/falcon'
+Plug 'AlessandroYorba/Despacio'
+Plug 'AlessandroYorba/Sierra'
+Plug 'AlessandroYorba/Alduin'
+Plug 'sheerun/vim-polyglot'
+Plug 'caksoylar/vim-mysticaltutor'
+Plug 'pineapplegiant/spaceduck'
+Plug 'chriskempson/base16-vim'
+Plug 'bluz71/vim-moonfly-colors'
 
 " Languages
 Plug 'cespare/vim-toml'
@@ -51,6 +67,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
+Plug 'voldikss/vim-floaterm'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 

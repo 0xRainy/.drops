@@ -16,7 +16,7 @@ require('telescope').setup{
     initial_mode = "insert",
     selection_strategy = "reset",
     sorting_strategy = "descending",
-    layout_strategy = "flex",
+    layout_strategy = "center",
     layout_defaults = {
       horizontal = {
         mirror = false,
@@ -32,10 +32,10 @@ require('telescope').setup{
     winblend = 5,
     width = 0.75,
     preview_cutoff = 120,
-    results_height = 1,
+    results_height = 10,
     results_width = 0.8,
     border = {},
-    borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
+    borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
     color_devicons = true,
     use_less = true,
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,

@@ -25,12 +25,12 @@ set autochdir
 set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set relativenumber                      " Relative line numbers
-set cursorline                          " Enable highlighting of the current line
+" set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
-set showtabline=2                       " Always show tabs
+set showtabline=0                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
-set nobackup                            " This is recommended by coc
-set nowritebackup                       " This is recommended by coc
+" set nobackup                            " This is recommended by coc
+" set nowritebackup                       " This is recommended by coc
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
 set updatetime=300                      " Faster completion
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
@@ -60,6 +60,8 @@ set guifont=FiraCode\ NF:h12
 set wildmenu
 set wildmode=longest:full,full
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set statusline=%H%W%q%{FugitiveStatusline()}%=%F%M
+set fillchars+=eob:\ 
 
 " Neovide settings
 let g:neovide_refresh_rate=120

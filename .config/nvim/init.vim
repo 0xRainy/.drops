@@ -12,16 +12,22 @@ execute config_cmd."/general/functions.vim"
 execute config_cmd."/general/settings.vim"
 execute config_cmd."/general/mappings.vim"
 
-" .vim Things
-execute config_cmd."/plug-configs/airline.vim"
+" Plugin settings
+" execute config_cmd."/plug-configs/airline.vim"
 execute config_cmd."/plug-configs/nvim-lsp.vim"
 execute config_cmd."/plug-configs/compe.vim"
 execute config_cmd."/plug-configs/nvim-tree.vim"
 execute config_cmd."/plug-configs/telescope.vim"
+execute config_cmd."/plug-configs/floaterm.vim"
 
 " .lua Things
 execute config_cmd_lua."/lua_stuff/lsp.lua"
 execute config_cmd_lua."/lua_stuff/telescope.lua"
 
 " Theme
-colorscheme embark
+colorscheme base16-embers
+highlight LineNr guibg=NONE
+highlight SignColumn guibg=NONE
+highlight VertSplit guibg=NONE
+highlight StatusLine guibg=#2C2620
+
