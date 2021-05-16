@@ -7,7 +7,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>of <cmd>Telescope oldfiles<cr>
 nnoremap <leader>qf <cmd>Telescope quickfix<cr>
 nnoremap <leader>fs <cmd>Telescope lsp_dynamic_workspace_symbols<cr>
-nnoremap <silent> <Leader>bb :Telescope buffers<CR>
+nnoremap <silent> <Leader>b :Telescope buffers<CR>
 
 " Uncomment if on windows
 let g:sql_clib_path = 'C:\sqlite3\sqlite3.dll'

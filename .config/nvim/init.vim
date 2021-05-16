@@ -25,9 +25,14 @@ execute config_cmd_lua."/lua_stuff/lsp.lua"
 execute config_cmd_lua."/lua_stuff/telescope.lua"
 
 " Theme
-colorscheme base16-embers
-highlight LineNr guibg=NONE
-highlight SignColumn guibg=NONE
+colorscheme turtles
+highlight LineNr guibg=#111111
+highlight SignColumn guibg=#111111
 highlight VertSplit guibg=NONE
-highlight StatusLine guibg=#2C2620
+highlight StatusLine guifg=#111111
+highlight StatusLine guibg=#575b67
+highlight StatusLineNC guibg=#373b47
+highlight StatusLineNC guifg=#111111
+highlight NormalFloat guibg=#151515
+highlight Pmenu guibg=#151515
 

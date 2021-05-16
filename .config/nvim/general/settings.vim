@@ -4,7 +4,7 @@ filetype plugin indent on
 let mapleader=" "
 let maplocalleader="\\"
 
-set completeopt=menuone,noselect
+set completeopt=menuone,preview,noselect
 set shortmess+=c
 set guicursor=a:blinkwait1-blinkoff500-blinkon500                          " Always block cursor
 set hidden                              " Required to keep multiple buffers open multiple buffers

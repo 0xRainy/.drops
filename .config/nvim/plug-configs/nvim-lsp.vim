@@ -12,6 +12,9 @@ nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.declaration()<CR>
 " Code Actions
 nnoremap <silent> ga    <cmd>lua vim.lsp.buf.code_action()<CR>
 
+" Rust Format
+nnoremap <silent> <Leader>rf :RustFmt<CR>
+
 " Enable type inlay hints
 autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *.rs
 \ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment", enabled = {"TypeHint", "ChainingHint", "ParameterHint"} }
