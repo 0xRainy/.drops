@@ -28,8 +28,11 @@ nnoremap <silent> <Leader>q :q<CR>
 nnoremap <silent> <Leader>Q :q!<CR>
 
 " Leader+d :bd
-nnoremap <silent> <Leader>d :b #\|bd #<CR>
-nnoremap <silent> <Leader>D :b #\|bd! #<CR>
+nnoremap <silent> <Leader>d :bd<CR>
+nnoremap <silent> <Leader>D :bd!<CR>
+
+" Leader+c :close
+nnoremap <silent> <Leader>c :close<CR>
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"

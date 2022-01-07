@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 
 " Rust.vim
 Plug 'rust-lang/rust.vim'
+Plug 'simrat39/rust-tools.nvim'
 
 " Collection of common configuration for the Nvim LSP client
 Plug 'neovim/nvim-lspconfig'
@@ -18,15 +19,16 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp_extensions.nvim'
 
 " Autocompletion framework for built-in LSP
-Plug 'hrsh7th/nvim-compe'
+" Plug 'hrsh7th/nvim-compe'
 
 " Snippet engine to handle LSP snippets
-Plug 'hrsh7th/vim-vsnip'
+" Plug 'hrsh7th/vim-vsnip'
 
 " Telescope, everything is fuzzy
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
 " Telescope cheatsheets
 Plug 'tami5/sql.nvim'
 Plug 'nvim-telescope/telescope-cheat.nvim'
@@ -40,8 +42,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 " Appearance
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
-Plug 'mkitt/tabline.vim'
-Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'mkitt/tabline.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'wadackel/vim-dogrun'
@@ -71,9 +73,13 @@ Plug 'cespare/vim-toml'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'tpope/vim-fugitive'
+"Plug 'airblade/vim-gitgutter'
 Plug 'simeji/winresizer'
 Plug 'voldikss/vim-floaterm'
-Plug 'jiangmiao/auto-pairs'
+Plug 'mbbill/undotree'
+
+" Github Copilot
+Plug 'github/copilot.vim'
 
 call plug#end()
 

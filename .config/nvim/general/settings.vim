@@ -27,7 +27,7 @@ set number                              " Line numbers
 set relativenumber                      " Relative line numbers
 " set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
-set showtabline=0                       " Always show tabs
+set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 " set nobackup                            " This is recommended by coc
 " set nowritebackup                       " This is recommended by coc
@@ -41,6 +41,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set nowrap
+set scrolloff=8
 set smartcase
 set ignorecase
 set noswapfile
@@ -50,9 +51,9 @@ set incsearch                           " Search while typing
 set colorcolumn=80                      " This thing ------------------------>
 set termguicolors
 set list                                " show whitespace
-set listchars=nbsp:⦸
-set listchars+=tab:▷┅
-set listchars+=extends:»
+" set listchars=nbsp:⦸
+" set listchars+=tab:▷┅
+" set listchars+=extends:»
 set listchars+=trail:•
 set textwidth=80                        " automatically wrap at 80 columns
 set whichwrap=b,h,l,s,<,>,[,],~         " allow crossing of line boundaries
@@ -62,6 +63,7 @@ set wildmode=longest:full,full
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 set statusline=%H%W%q%{FugitiveStatusline()}%=%F%M
 set fillchars+=eob:\ 
+set linespace=1
 
 " Neovide settings
 let g:neovide_refresh_rate=120

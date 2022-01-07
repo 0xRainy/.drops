@@ -42,8 +42,14 @@ require('telescope').setup{
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
-  }
+  },
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {}
+    }
+  },
 }
 require'telescope'.load_extension("cheat")
-require'telescope'.load_extension('lsp_handlers')
+require'telescope'.load_extension("lsp_handlers")
+--require'telescope'.load_extension("ui-select")
 
